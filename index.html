@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cunion Collection (Get Better Soren)</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Bigger Title Text */
+        h1 {
+            letter-spacing: 8px;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            border-bottom: 4px solid #fff;
+            padding-bottom: 10px;
+            font-size: 3.5rem; /* Increased size */
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Bigger Menu and Buttons */
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 450px; /* Wider for bigger buttons */
+        }
+
+        .menu-item {
+            text-align: center;
+            padding: 20px; /* Increased padding */
+            border: 3px solid #fff; /* Thicker border */
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.8rem; /* Increased font size */
+            font-weight: bold;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            background: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .menu-item:hover {
+            background: #fff;
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        /* Hide the game list by default */
+        #game-list {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="splash-screen" class="container">
+        <h1>Cunion Collection</h1>
+        <div class="menu">
+            <button class="menu-item" onclick="showMenu()">Play</button>
+        </div>
+    </div>
+
+    <div id="game-list" class="container">
+        <h1>Cunion Collection</h1>
+        <div class="menu">
+            <a href="https://cunionthecaionion.github.io/CunionClimb/" class="menu-item">Cunion Climb</a>
+            <a href="https://cunionthecaionion.github.io/SorenSingularity/" class="menu-item">Soren Singularity</a>
+            <a href="" class="menu-item">E.M.K.S.</a>
+            <a href="" class="menu-item">?????</a>
+        </div>
+    </div>
+
+    <script>
+        function showMenu() {
+            // Hide the splash screen
+            document.getElementById('splash-screen').style.display = 'none';
+            // Show the game list
+            document.getElementById('game-list').style.display = 'flex';
+        }
+    </script>
+
+</body>
+</html>
